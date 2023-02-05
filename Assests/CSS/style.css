@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+  background-color: #eae3d2;
+}
+
+header {
+  display: flex;
+  width: 15%;
+  flex-direction: column;
+  color: #fff;
+  background-color: #1c335f;
+  box-shadow: 0 4px 10px -0px black;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  line-height: 3rem;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+a {
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  list-style: none;
+  color: #fff;
+  font-size: 1.5rem;
+  align-self: center;
+}
