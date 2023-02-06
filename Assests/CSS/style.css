@@ -5,6 +5,7 @@
 }
 
 body {
+  display: flex;
   background-color: #eae3d2;
 }
 
@@ -71,7 +72,9 @@ a:hover {
 .About-Me {
   display: flex;
   flex-flow: column wrap-reverse;
-  width: 80%;
+  flex: 1;
+  width: 170%;
+  height: 140%;
   margin-left: 15rem;
   border: 10px solid black;
 }
