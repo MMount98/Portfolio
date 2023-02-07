@@ -10,8 +10,6 @@
 }
 
 body {
-  display: flex;
-  flex-wrap: wrap;
   background-color: #1b1b1a;
 }
 
@@ -19,81 +17,108 @@ body {
 
 header {
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  width: 17%;
-  height: 100vh;
-  position: sticky;
   background-color: var(--dark);
   box-shadow: 0 4px 10px -0px black;
-  top: 0;
 }
 
 h1 {
-  display:flex;
-  flex-direction: row;
-  justify-content: center;
   font-size: 2.65rem;
   line-height: 2.5rem;
   font-family: "Dancing Script", cursive;
+  margin: 0 3rem;
   color: var(--light);
   text-shadow: var(--neon);
 }
 
-.logo {
-  height: 25%;
-}
-
 .logo img {
-  width: 10rem;
-  height: 10rem;
-  border: 0.25rem #fff solid;
+  width: 8rem;
+  height: 8rem;
   border-radius: 50%;
   box-shadow: var(--neon);
-  margin-top: 1.25rem;
+  margin-left: 2rem;
 }
+
 nav {
   display: flex;
-  flex-direction: column;
   justify-content: space-around;
-  flex-grow: 1;
-  margin-bottom: 1.25rem;
+  flex-grow: 3;
 }
+
 a {
   font-family: "Montserrat", sans-serif;
   text-decoration: none;
   list-style: none;
   color: var(--light);
   font-size: 1.5rem;
-  align-self: center;
 }
 
 a:hover {
   text-shadow: var(--neon);
 }
-
-@media screen and (max-width: 1200px) {
-  
-  header {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  height: 10vh;
-}
-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-  .logo {
-    display:none;
+@media screen and (max-width: 950px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
   }
-h1 {
-  display: none;
-}
- @media screen and (max-width: 480px) {
-   nav{
+
+  h1 {
     display: none;
-   }
- }
-/* Main */
+  }
+
+  .logo img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  img {
+    display: none;
+  }
+}
+
+/*Main Sections*/
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+}
+
+section {
+  display: flex;
+  margin: 2rem;
+  border-bottom: 0.5rem solid rgba(255, 255, 255, 0.3);
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 22rem;
+  width: 45rem;
+  color: var(--light);
+}
+
+img {
+  height: 75%;
+  box-shadow: var(--neon);
+}
+
+h2 {
+  font-family: "Dancing Script", cursive;
+  font-size: 7rem;
+  margin: 1rem;
+  text-shadow: var(--neon);
+}
+
+p {
+  align-self: center;
+  font-family: "Playfair Display", serif;
+  font-size: 1.5rem;
+  width: 35rem;
+  align-self: flex-end;
+}
