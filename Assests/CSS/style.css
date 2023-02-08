@@ -4,6 +4,7 @@
   --dark: #1c335f;
   --light: #fff;
   --cursive: "Dancing Script", cursive;
+  --clean: "Montserrat", sans-serif;
 }
 * {
   box-sizing: border-box;
@@ -48,7 +49,7 @@ nav {
 }
 
 header a {
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--clean);
   text-decoration: none;
   list-style: none;
   color: var(--light);
@@ -183,7 +184,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--clean);
   font-size: 2rem;
   color: var(--light);
 }
@@ -197,13 +198,34 @@ p {
 input,
 label {
   font-size: 2rem;
+  font-family: var(--clean);
 }
 textarea {
+  font-family: var(--clean);
+  font-size: 1.5rem;
   align-self: center;
   height: 15rem;
   width: 20rem;
 }
 
 button {
+  font-size: 1.5rem;
+  font-family: var(--clean);
+  color: var(--light);
+  height: 4rem;
+  width: 8em;
   align-self: center;
+  margin: 2rem;
+  border-radius: 25%;
+  background-color: #1c335f;
+}
+
+/*footer*/
+footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+#icon {
+  color: var(--light);
 }
