@@ -224,8 +224,10 @@ button {
 footer {
   display: flex;
   justify-content: space-around;
+  margin:2rem;
 }
 
-#icon {
+#icons {
+  font-size: 3.5rem;
   color: var(--light);
 }
