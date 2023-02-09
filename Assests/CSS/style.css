@@ -199,7 +199,7 @@ p {
   justify-content: space-around;
 }
 
-.projects h2 {
+.projects h3 {
   font-size: 7rem;
   text-align: center;
   font-family: var(--cursive);
@@ -295,7 +295,7 @@ figcaption {
   background-color: rgb(55, 52, 52);
 }
 
-.contact-me h2 {
+.contact-me h3 {
   font-family: var(--cursive);
   color: var(--light);
   font-size: 7rem;
