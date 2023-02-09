@@ -125,7 +125,7 @@ p {
   align-self: center;
   font-family: "Playfair Display", serif;
   font-size: 1.5rem;
-  width: 35rem;
+  width: 45rem;
 }
 
 @media screen and (max-width: 1200px) {
