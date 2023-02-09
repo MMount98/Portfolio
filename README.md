@@ -38,4 +38,8 @@ Using a Wire Frame is important when planning about the build and design of a we
 ![WireFrame of the work section](./Assests/images/wireframe-work.png)
 ![WireFrame of the contact me section](./Assests/images/Wirefram-contact.png)
 
-Wire Frames can be easy to designed with sites such as [Exalidraw](https://excalidraw.com/)!
+Wire Frames can be easy to designed with sites such as [Exalidraw](https://excalidraw.com/)I found that using them signficatly increased my understanding of flexbox design work.
+
+## Take Aways
+
+From this project, I found how diffcult it can be to just dive straight into a project without any pre-planning. Thus why I started using wire frames to take a project head on with planning.
