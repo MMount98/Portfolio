@@ -1,3 +1,4 @@
+/*Varibles*/
 :root {
   --neon: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #1c335f, 0 0 20px #98a6c1,
     0 0 25px #1c335f, 0 0 35px #c6ae70;
@@ -7,6 +8,7 @@
   --clean: "Montserrat", sans-serif;
   --h2-size-790: 4.5rem;
 }
+/*Universal Rules*/
 * {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -60,6 +62,9 @@ header a {
 a:hover {
   text-shadow: var(--neon);
 }
+
+/* Header and Nav Bar Moblie Rules*/
+
 @media screen and (max-width: 950px) {
   nav {
     flex-direction: column;
@@ -127,6 +132,7 @@ p {
   font-size: 1.5rem;
   width: 45rem;
 }
+/* About Me section Moblie Rules*/
 
 @media screen and (max-width: 1200px) {
   section {
@@ -202,6 +208,9 @@ p {
   margin: 1.5rem;
   text-shadow: var(--neon);
 }
+
+/*Img Cards*/
+
 #card1 {
   border-radius: 2%;
   filter: grayscale(100%);
@@ -216,6 +225,29 @@ p {
   width: 30rem;
   margin: 0.5rem;
 }
+
+figcaption {
+  position: relative;
+  top: -12rem;
+  font-size: 3rem;
+  text-align: center;
+  text-decoration: none;
+  color: var(--light);
+  background-color: var(--dark);
+  box-shadow: 1rem 0.75rem 1rem black;
+}
+
+#first-app {
+  position: relative;
+  top: -20rem;
+  font-size: 3rem;
+  text-align: center;
+  text-decoration: none;
+  color: var(--light);
+  background-color: var(--dark);
+  box-shadow: 1rem 0.75rem 1rem black;
+}
+
 #card1:hover {
   box-shadow: var(--neon);
   filter: grayscale(0%);
@@ -227,6 +259,8 @@ p {
   cursor: pointer;
 }
 
+/*Work Section Moblie Rules*/
+
 @media screen and (max-width: 1200px) {
   #card1,
   #card {
@@ -234,6 +268,15 @@ p {
     width: 15rem;
     height: 15rem;
     overflow: hidden;
+  }
+  figcaption {
+    top: -10rem;
+    font-size: 2rem;
+  }
+
+  #first-app {
+    top: -10rem;
+    font-size: 2rem;
   }
 }
 
@@ -295,8 +338,9 @@ button {
   align-self: center;
   background-color: gray;
   margin: 1rem;
-  border-radius: .8rem;
+  border-radius: 0.8rem;
 }
+/*Contact Me Moblie Rules*/
 
 @media screen and (max-width: 800px) {
   .contact-me h2 {
