@@ -101,6 +101,12 @@ section {
   border-bottom: 0.5rem solid rgba(255, 255, 255, 0.3);
 }
 
+@media screen and (max-width: 800px) {
+  section {
+    border-bottom: #1b1b1a;
+  }
+}
+
 /* About Me Section */
 
 .about-text {
@@ -280,11 +286,15 @@ figcaption {
   }
 }
 
-@media screen and (max-width: 480px) {
-  #card1,
-  #card {
-    height: 2%;
-    width: 2%;
+@media screen and (max-width: 450px) {
+  .projects h3 {
+    font-size: 4rem;
+    margin-top: 6rem;
+  }
+
+  figcaption,
+  #first-app {
+    top: 5rem;
   }
 }
 /*Contact Me Section*/
@@ -301,6 +311,12 @@ figcaption {
   font-size: 7rem;
   margin: 1rem;
   text-shadow: var(--neon);
+}
+
+.contact-me p {
+  font-family: var(--clean);
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .info {
@@ -351,6 +367,10 @@ button {
     text-shadow: var(--neon);
   }
 
+  .contact-me p {
+    font-size: 0.75rem;
+  }
+
   .info {
     font-size: 1.5rem;
   }
@@ -365,7 +385,21 @@ button {
     width: 20rem;
   }
 }
+@media screen and (max-width: 430px) {
+  .contact-me h2 {
+    font-size: 2rem;
+  }
 
+  input,
+  label {
+    font-size: 0.75;
+  }
+  textarea {
+    font-size: 0.75rem;
+    height: 7rem;
+    width: 10rem;
+  }
+}
 /*footer*/
 footer {
   display: flex;
